@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Accessible and performance-optimized student portfolio webpage.">
+  <title>Student Portfolio | Week 4</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <a class="skip-link" href="#main-content">Skip to main content</a>
+
+  <header class="site-header">
+    <div class="container">
+      <a class="logo" href="#" aria-label="Student Portfolio home">Student<span>Portfolio</span></a>
+      <nav aria-label="Main navigation">
+        <ul class="nav-list">
+          <li><a href="#about">About</a></li>
+          <li><a href="#skills">Skills</a></li>
+          <li><a href="#projects">Projects</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main id="main-content">
+    <section class="hero" aria-labelledby="hero-title">
+      <div class="container hero-content">
+        <div>
+          <p class="eyebrow">BCA Student • Frontend Development</p>
+          <h1 id="hero-title">Building simple, accessible and fast web experiences.</h1>
+          <p class="intro">
+            This sample portfolio demonstrates semantic HTML, optimized CSS,
+            keyboard-friendly navigation and accessibility best practices.
+          </p>
+          <a class="button" href="#projects">View Projects</a>
+        </div>
+      </div>
+    </section>
+
+    <section id="about" class="section" aria-labelledby="about-title">
+      <div class="container">
+        <h2 id="about-title">About Me</h2>
+        <p>
+          I am a BCA student interested in web development, programming and
+          creating user-friendly digital experiences. This page is optimized
+          for performance and designed to be usable with assistive technologies.
+        </p>
+      </div>
+    </section>
+
+    <section id="skills" class="section alt-section" aria-labelledby="skills-title">
+      <div class="container">
+        <h2 id="skills-title">Skills</h2>
+        <div class="card-grid">
+          <article class="card">
+            <h3>HTML</h3>
+            <p>Semantic structure, accessible forms and meaningful document hierarchy.</p>
+          </article>
+          <article class="card">
+            <h3>CSS</h3>
+            <p>Responsive layouts, reusable classes and efficient styling.</p>
+          </article>
+          <article class="card">
+            <h3>JavaScript</h3>
+            <p>Basic DOM manipulation, events and interactive web features.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section id="projects" class="section" aria-labelledby="projects-title">
+      <div class="container">
+        <h2 id="projects-title">Projects</h2>
+        <div class="card-grid">
+          <article class="card">
+            <h3>Responsive Web Page</h3>
+            <p>A mobile-friendly static webpage using responsive CSS techniques.</p>
+          </article>
+          <article class="card">
+            <h3>Student Information Form</h3>
+            <p>A structured form demonstrating labels, validation-friendly controls and clear grouping.</p>
+          </article>
+          <article class="card">
+            <h3>Accessibility Optimization</h3>
+            <p>A webpage improved using semantic HTML, keyboard navigation and accessible text.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section id="contact" class="section alt-section" aria-labelledby="contact-title">
+      <div class="container">
+        <h2 id="contact-title">Contact</h2>
+        <form class="contact-form" action="#" method="post">
+          <div>
+            <label for="name">Name</label>
+            <input id="name" name="name" type="text" autocomplete="name" required>
+          </div>
+          <div>
+            <label for="email">Email</label>
+            <input id="email" name="email" type="email" autocomplete="email" required>
+          </div>
+          <div>
+            <label for="message">Message</label>
+            <textarea id="message" name="message" rows="5" required></textarea>
+          </div>
+          <button class="button" type="submit">Send Message</button>
+        </form>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container">
+      <p>&copy; 2026 Student Portfolio. Created for Week 4 Web Development Internship Task.</p>
+    </div>
+  </footer>
+</body>
+</html>
